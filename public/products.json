@@ -1,0 +1,66 @@
+ [
+    {
+        "id":1,
+       "title":"Adicolor Classics Joggers",
+       "category": "Dress",
+       "price": 63.85,
+        "image":"https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/F/D/138730_1658777595.jpg",
+        "status": "Best Selers"
+    },
+    {
+        "id":2,
+       "title":"Nike Sportswear Futura Luxe",
+       "category": "Bag",
+       "price": 130.00,
+       "image":"https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=600",
+       "status": "Best Selers"
+    },
+    {
+        "id":3,
+       "title":"Geometric print Scarf",
+       "category": "Dress",
+       "price": 53.00,
+       "image":"https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg?auto=compress&cs=tinysrgb&w=600",
+       "status": "Best Selers"
+    },
+    {
+        "id":4,
+       "title":"Yellow Reserved Hoodie",
+       "category": "Hoodies",
+       "price": 63.85,
+       "image":"https://media.istockphoto.com/id/1305793711/photo/blank-hooded-sweatshirt-mockup-for-print-isolated-on-white-background.jpg?b=1&s=612x612&w=0&k=20&c=IJ6D1EledCN2m0c-VhAPSjXnga9HX65fhRdYwImphy8=",
+       "status": "New Arriaval"
+    },
+    {
+        "id":5,
+       "title":"Basic Dress Green",
+       "category": "Dress",
+       "price": 236.00,
+       "image":"https://media.istockphoto.com/id/1301395883/photo/brown-sweatshirt-hanging-on-a-hanger.jpg?b=1&s=612x612&w=0&k=20&c=xgza6TdikAKJnjtu5bQ4un6iUQuPqCkCIoBNgJXvurY=",
+       "status": "New Arriaval"
+    },
+    {
+        "id":6,
+       "title":"Nike Air Zoom Pegasus",
+       "category": "Shoe",
+       "price": 198.00,
+       "image":"https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600",
+       "status": "Best Selers"
+    },
+    {
+        "id":7,
+       "title":"Nike Repel Miler",
+       "category": "Hoodies",
+       "price": 120.50,
+       "image":"https://media.istockphoto.com/id/1340904443/photo/oversized-hooded-sweatshirt-mockup-for-print.jpg?b=1&s=612x612&w=0&k=20&c=wORyP3A4AaDmYjhCeNKF8I9GX1VXkMepVe4UA54klZw=",
+       "status": "Best Selers"
+    },
+    {
+        "id":8,
+       "title":"Nike Sportswear Futura Luxe",
+       "category": "Glasses",
+       "price": 160.00,
+       "image":"https://images.thdstatic.com/productImages/e0a8f628-2cbc-42f4-8f0c-595b74f19dcc/svn/magnifeye-reading-glasses-86020-14-64_600.jpg"
+    }
+   
+]
