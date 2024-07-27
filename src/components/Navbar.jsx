@@ -42,7 +42,7 @@ const Navbar = () => {
    <div className='md:hidden block'>
     <button onClick={() =>toggleMenu()}>
       {
-        isMenuOpen ? <FaTimes className='size-5 text-black' /> : <FaBars className='size-5 text-black' />
+        isMenuOpen ? <FaTimes className='size-5 text-black ' /> : <FaBars className='size-5 text-black' />
       }</button>
    </div>
 
@@ -66,13 +66,15 @@ const Navbar = () => {
 {/* for sm screens */}
 
 <div>
-<ul className={`bg-black text-white px-4 py-2 rounded md:hidden  ${isMenuOpen ? "" : "hidden"}`}>
+<ul className={`bg-black  text-white px-4 py-2 inset-0 rounded md:hidden  ${isMenuOpen ? "" : "hidden"}`}>
         {navItems.map(({title, path}) => (
+          
             <li key={title} className='hover:text-orange-500 my-3 cursor-pointer'>
                 <Link to="/">{title}</Link>
             </li>
+           
         ) )}
-       </ul>
+        </ul>
 </div>
 
 

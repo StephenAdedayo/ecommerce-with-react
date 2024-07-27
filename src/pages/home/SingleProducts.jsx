@@ -17,7 +17,7 @@ useEffect(() => {
           const data = await response.json();
          
           const product = data.filter(p => p.id == id)
-          console.log(product);
+          // console.log(product);
           setProducts(product[0])
           // setProducts(data)
           // setFilteredItems(data)
@@ -27,7 +27,7 @@ useEffect(() => {
     }
     fetchData();
     window.scroll({top: 0, behavior: "smooth"})
-}, [])
+}, [id])
 
 const {title, category, price, image, status} = products
 

@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { FaFilter } from 'react-icons/fa'
+import { FaFilter, FaSearch } from 'react-icons/fa'
 import Cards from '../../components/Cards'
 
 const Products = () => {
     const [products, setProducts] = useState([])
     const [filteredItems, setFilteredItems] = useState([])
-    const [selectedCategory, setSelectedCategory] = useState("all")
+    const [selectedCategory, setSelectedCategory] = useState('all')
     const [sortOption, setSortOption] = useState("default")
-
+    const [search, setSearch] = useState('')
+  
 
     useEffect (() => {
           const fetchData = async () => {
@@ -39,26 +40,34 @@ const Products = () => {
    const handleSortChange = (option) => {
     setSortOption(option)
 
-    let sortedItems = [...filteredItems]
+    // let sortedItems = [...products]
 
     switch(option){
       case "A-Z" : 
-         sortedItems.sort((a,b) => a.title.localeCompare(b.title))
+         products.sort((a,b) => a.title.localeCompare(b.title))
          break
          case "Z-A" : 
-         sortedItems.sort((a,b) => b.title.localeCompare(a.title))
+         products.sort((a,b) => b.title.localeCompare(a.title))
          break
          case "low-to-high":
-          sortedItems.sort((a,b) => a.price - b.price)
+          products.sort((a,b) => a.price - b.price)
           break
           case "high-to-low":
-            sortedItems.sort((a,b) => b.price - a.price)
+            products.sort((a,b) => b.price - a.price)
             break
          default: 'default'
           break
 
     }
-    setFilteredItems(sortedItems)
+    setFilteredItems(products)
+   }
+
+   const handleSearch = (value) => {
+    
+    setSearch(value)
+    
+    const filter = products.filter(product => product.title.toLowerCase().includes(value.toLowerCase()))
+    setFilteredItems(filter)
    }
 
   return (
@@ -76,6 +85,15 @@ const Products = () => {
    <button onClick={() => filteredItem("Bag")}>Bags</button>
 </div>
 
+
+<div className='flex items-center rounded-lg border-2 border-black px-6 py-3 '>
+  <input
+  className='outline-none grow' 
+  value={search}
+  onChange={(e) => handleSearch(e.target.value)}
+  type="text" placeholder='search'/>
+  <FaSearch />
+</div>
 
 <div className=' flex justify-end rounded-sm '>
    <div className='bg-black p-2'>
@@ -99,7 +117,7 @@ const Products = () => {
 
 
 
-<Cards filteredItems ={filteredItems} />
+<Cards  filteredItems ={filteredItems} />
 
  </div>
 

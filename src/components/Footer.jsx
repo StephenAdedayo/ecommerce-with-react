@@ -97,7 +97,7 @@ const Footer = () => {
 
       {/* footer bottom */}
       <div className="bg-black">
-      <p className="text-white text-center items-center py-3">© {currentYear} Coral, Inc.</p>
+      <p className="text-white text-center items-center py-3">© {currentYear} Trent, Inc.</p>
       </div>
     </footer>
   );

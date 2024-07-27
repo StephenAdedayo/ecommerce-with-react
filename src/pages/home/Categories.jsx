@@ -34,10 +34,10 @@ const Categories = () => {
 
             <div className='grid grid-cols-2 gap-2'>
 
-            <Link to=""><img src="/01.png" alt="" className='w-full hover:scale-105 transition-all duration-200' /></Link>
-            <Link to=""><img src="/02.png" alt="" className='w-full hover:scale-105 transition-all duration-200' /></Link>
-            <Link to=""><img src="/03.png" alt="" className='w-full hover:scale-105 transition-all duration-200'/></Link>
-            <Link to=""><img src="/20.png" alt="" className='w-full hover:scale-105 transition-all duration-200' /></Link>
+            <Link to="/"><img src="/01.png" alt="" className='w-full hover:scale-105 transition-all duration-200' /></Link>
+            <Link to="/"><img src="/02.png" alt="" className='w-full hover:scale-105 transition-all duration-200' /></Link>
+            <Link to="/"><img src="/03.png" alt="" className='w-full hover:scale-105 transition-all duration-200'/></Link>
+            <Link to="/"><img src="/20.png" alt="" className='w-full hover:scale-105 transition-all duration-200' /></Link>
 
             </div>
 
